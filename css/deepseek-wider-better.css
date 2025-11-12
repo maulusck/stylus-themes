@@ -2,17 +2,17 @@
 @name           deepseek wider better
 @namespace      https://github.com/maulusck/stylus-themes
 @version        0.1
-@description    e2 better, minimal font & color update + neon link effect
+@description    deepseek wider better
 @author         @maulusckf
 @license        WTFPL
 @preprocessor   default
 @homepageURL    https://github.com/maulusck/stylus-themes
 @supportURL     https://github.com/maulusck/stylus-themes/issues
-@updateURL      https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/chatgpt-wider-nologin.css
-@downloadURL    https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/chatgpt-wider-nologin.css
+@updateURL      https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/deepseek-wider-better.css
+@downloadURL    https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/deepseek-wider-better.css
 @source         https://github.com/maulusck/stylus-themes
 @repository     https://github.com/maulusck/stylus-themes
-@previewURL     https://raw.githubusercontent.com/username/repo-name/main/preview.png
+@previewURL     https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/previews/deepseek-wider-better.png
 ==/UserStyle== */
 @-moz-document domain("chat.deepseek.com") {
 

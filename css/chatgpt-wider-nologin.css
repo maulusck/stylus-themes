@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name           ChatGPT wider - nologin
+@name           chatgpt wider nologin
 @namespace      https://github.com/maulusck/stylus-themes
 @version        0.1
 @description    ChatGPT wider for poor people
@@ -12,7 +12,7 @@
 @downloadURL    https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/chatgpt-wider-nologin.css
 @source         https://github.com/maulusck/stylus-themes
 @repository     https://github.com/maulusck/stylus-themes
-@previewURL     https://raw.githubusercontent.com/username/repo-name/main/preview.png
+@previewURL     https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/previews/chatgpt-wider-nologin.png
 ==/UserStyle== */
 @-moz-document domain("chatgpt.com") {
     body {

@@ -1,10 +1,18 @@
 /* ==UserStyle==
-@name           Old Reddit Minimal theme
+@name           old reddit minimal
 @namespace      https://github.com/maulusck/stylus-themes
 @version        0.1
-@description    My organizations blocks reddit.com thus Reddit's CSS, but not old.reddit.com ;)
+@description    for companies that blocks reddit.com but not old.reddit.com ;)
 @author         @maulusckf
 @license        WTFPL
+@preprocessor   default
+@homepageURL    https://github.com/maulusck/stylus-themes
+@supportURL     https://github.com/maulusck/stylus-themes/issues
+@updateURL      https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/old-reddit-minimal.css
+@downloadURL    https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/old-reddit-minimal.css
+@source         https://github.com/maulusck/stylus-themes
+@repository     https://github.com/maulusck/stylus-themes
+@previewURL     https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/previews/old-reddit-minimal.png
 ==/UserStyle== */
 @-moz-document domain("old.reddit.com"),
 domain("www.reddit.com") {
@@ -32,7 +40,6 @@ domain("www.reddit.com") {
         background-color: #1a1a1a;
         border-radius: 4px;
         padding: 4px 8px;
-
         box-sizing: border-box;
         max-width: 100%;
         overflow-x: auto;
