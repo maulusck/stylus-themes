@@ -9,10 +9,6 @@
 @homepageURL    https://github.com/maulusck/stylus-themes
 @supportURL     https://github.com/maulusck/stylus-themes/issues
 @updateURL      https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/old-reddit-minimal.css
-@downloadURL    https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/old-reddit-minimal.css
-@source         https://github.com/maulusck/stylus-themes
-@repository     https://github.com/maulusck/stylus-themes
-@previewURL     https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/previews/old-reddit-minimal.png
 ==/UserStyle== */
 @-moz-document domain("old.reddit.com"),
 domain("www.reddit.com") {
