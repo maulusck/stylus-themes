@@ -20,10 +20,26 @@
     .content,
     .post,
     .message,
-    .text {
+    .text,
+    .nodelet_content {
         background-color: #1a1d22 !important;
         color: #bfdfff !important;
         font-weight: 400 !important;
+    }
+
+    input {
+        color: #e1ff21 !important;
+        background-color: #1a1d22 !important;
+    }
+
+    input::placeholder {
+        color: #e1ff216b !important;
+    }
+
+    td,
+    dt {
+        color: #e1ff21 !important;
+        background-color: #38495e !important;
     }
 
     a {
@@ -33,9 +49,12 @@
     }
 
     a:hover {
-        color: #30f90b !important;
-        text-shadow: 0 0 1px #39FF14, 0 0 1px #39FF14;
+        color: #E000FF !important;
+        /* lighter neon magenta */
+        text-shadow: 0 0 1px #D200FF, 0 0 2px #D200FF;
     }
+
+
 
     a:visited {
         color: #4dff00 !important;

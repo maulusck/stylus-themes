@@ -5,6 +5,14 @@
 @description    ChatGPT wider for poor people
 @author         @maulusckf
 @license        WTFPL
+@preprocessor   default
+@homepageURL    https://github.com/maulusck/stylus-themes
+@supportURL     https://github.com/maulusck/stylus-themes/issues
+@updateURL      https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/chatgpt-wider-nologin.css
+@downloadURL    https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/chatgpt-wider-nologin.css
+@source         https://github.com/maulusck/stylus-themes
+@repository     https://github.com/maulusck/stylus-themes
+@previewURL     https://raw.githubusercontent.com/username/repo-name/main/preview.png
 ==/UserStyle== */
 @-moz-document domain("chatgpt.com") {
     body {
