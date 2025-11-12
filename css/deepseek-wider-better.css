@@ -4,11 +4,11 @@
 @version        0.1
 @description    deepseek wider better
 @author         @maulusckf
-@license        WTFPL
-@preprocessor   default
 @homepageURL    https://github.com/maulusck/stylus-themes
 @supportURL     https://github.com/maulusck/stylus-themes/issues
 @updateURL      https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/deepseek-wider-better.css
+@license        WTFPL
+@preprocessor   default
 ==/UserStyle== */
 @-moz-document domain("chat.deepseek.com") {
 

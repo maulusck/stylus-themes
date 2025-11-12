@@ -4,11 +4,11 @@
 @version        0.1
 @description    for companies that blocks reddit.com but not old.reddit.com ;)
 @author         @maulusckf
-@license        WTFPL
-@preprocessor   default
 @homepageURL    https://github.com/maulusck/stylus-themes
 @supportURL     https://github.com/maulusck/stylus-themes/issues
 @updateURL      https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/old-reddit-minimal.css
+@license        WTFPL
+@preprocessor   default
 ==/UserStyle== */
 @-moz-document domain("old.reddit.com"),
 domain("www.reddit.com") {
