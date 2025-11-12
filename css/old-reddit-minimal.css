@@ -4,6 +4,7 @@
 @version        0.1
 @description    My organizations blocks reddit.com thus Reddit's CSS, but not old.reddit.com ;)
 @author         @maulusckf
+@license        WTFPL
 ==/UserStyle== */
 @-moz-document domain("old.reddit.com"),
 domain("www.reddit.com") {
