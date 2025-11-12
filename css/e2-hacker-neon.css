@@ -1,0 +1,42 @@
+/* ==UserStyle==
+@name           everything2 hacker neon
+@namespace      https://github.com/maulusck/stylus-themes
+@version        0.1
+@description    e2 better, minimal font & color update + neon link effect
+@author         @maulusckf
+==/UserStyle== */
+@-moz-document domain("everything2.com") {
+
+    body,
+    input,
+    textarea,
+    select,
+    button {
+        font-family: "Courier New", monospace !important;
+    }
+
+    body,
+    .content,
+    .post,
+    .message,
+    .text {
+        background-color: #1a1d22 !important;
+        color: #bfdfff !important;
+        font-weight: 400 !important;
+    }
+
+    a {
+        color: #e1ff21 !important;
+        text-decoration: none !important;
+        transition: color 0.2s ease, text-shadow 0.2s ease;
+    }
+
+    a:hover {
+        color: #30f90b !important;
+        text-shadow: 0 0 1px #39FF14, 0 0 1px #39FF14;
+    }
+
+    a:visited {
+        color: #4dff00 !important;
+    }
+}

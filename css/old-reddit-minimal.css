@@ -1,0 +1,199 @@
+/* ==UserStyle==
+@name           Old Reddit Minimal theme
+@namespace      https://github.com/maulusck/stylus-themes
+@version        0.1
+@description    My organizations blocks reddit.com thus Reddit's CSS, but not old.reddit.com ;)
+@author         @maulusckf
+==/UserStyle== */
+@-moz-document domain("old.reddit.com"),
+domain("www.reddit.com") {
+    body {
+        background: #111;
+        color: #eee;
+        font-family: "Inter", "Segoe UI", sans-serif;
+        font-size: 13px;
+        line-height: 1.4;
+        overflow-x: hidden;
+    }
+
+    a {
+        color: #ff4500;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ff6a33;
+        text-decoration: underline;
+    }
+
+    pre,
+    blockquote {
+        background-color: #1a1a1a;
+        border-radius: 4px;
+        padding: 4px 8px;
+
+        box-sizing: border-box;
+        max-width: 100%;
+        overflow-x: auto;
+        font-size: 12px;
+    }
+
+    pre {
+        border-left: 3px solid #ff4500;
+        color: #b0b0b0;
+    }
+
+    blockquote {
+        border-left: 3px solid #ff4500;
+        color: #ccc;
+        font-style: italic;
+        margin: 0.8em 0;
+    }
+
+    .linkflairlabel {
+        display: block;
+        color: #28a745;
+        margin-top: 5px;
+        padding-left: 5px;
+        font-size: 11px;
+    }
+
+    #header,
+    .side,
+    .footer-parent,
+    #sr-header-area,
+    .redditname a::before,
+    .promotedlink,
+    .ad-container,
+    .ad,
+    .infobar,
+    .expand,
+    .spacer,
+    .score,
+    .footer,
+    .bottommenu,
+    .flat-list.buttons {
+        display: none !important;
+    }
+
+    .content {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 85%;
+        background: #181818;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 0 8px rgba(255, 0, 0, 0.05);
+        box-sizing: border-box;
+    }
+
+    .title,
+    .entry .title {
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 600;
+        padding-left: 5px;
+    }
+
+    .entry .usertext-body,
+    .expando,
+    .entry .tagline {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .arrow.up,
+    .arrow.down {
+        filter: invert(100%) hue-rotate(180deg);
+        opacity: 0.4;
+    }
+
+    .score {
+        color: #ff4500;
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+    .commentarea,
+    .comment {
+        background: #121212;
+        margin-bottom: 12px;
+        border: 1px solid #444;
+        border-radius: 4px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+
+    .comment .entry {
+        color: #ddd;
+    }
+
+    .linklisting {
+        margin-bottom: 20px;
+    }
+
+    .linklisting .thing {
+        background: #181818;
+        border-bottom: 1px solid #444;
+        padding: 8px 0;
+        box-sizing: border-box;
+    }
+
+    .linklisting .thing:hover {
+        background: #202020;
+    }
+
+    .expando {
+        background: #141414;
+        border: 1px solid #444;
+        border-radius: 4px;
+        padding: 8px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+
+    .flair,
+    .flairrichtext,
+    .flairrichtext.flaircolordark {
+        background-color: #3a1a00 !important;
+        border: 1px solid #FF4500 !important;
+        color: #FFB199 !important;
+        border-radius: 3px !important;
+        padding: 2px 6px !important;
+        margin: 2px 6px !important;
+        font-size: 11px !important;
+        font-weight: 500 !important;
+        display: inline-block !important;
+        line-height: 1.2 !important;
+    }
+
+    .flair:hover {
+        background-color: #D93900 !important;
+        border-color: #FF6A33 !important;
+        color: #fff !important;
+        transition: background 0.15s ease, border 0.15s ease, color 0.15s ease;
+    }
+
+    #header-bottom-left {
+        display: block;
+        background: #111;
+        padding: 6px 15px;
+        font-size: 12px;
+        color: #ff4500;
+        border-bottom: 1px solid #444;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #111;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #ff4500;
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name           deepseek wider better
+@namespace      https://github.com/maulusck/stylus-themes
+@version        0.1
+@description    e2 better, minimal font & color update + neon link effect
+@author         @maulusckf
+==/UserStyle== */
+@-moz-document domain("chat.deepseek.com") {
+
+    .dad65929,
+    .aaff8b8f,
+    .a2f8e4bb,
+    .aaff8b8f.eb830e32 {
+        max-width: 100%;
+    }
+
+    .ds-scroll-area {
+        padding: 0 !important;
+    }
+
+    ._24fad49,
+    .fbb737a4 {
+        padding: 15px !important;
+    }
+
+    .f8d1e4c0 {
+        background: none;
+    }
+}
