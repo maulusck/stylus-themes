@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           chatgpt wider nologin
 @namespace      https://github.com/maulusck/stylus-themes
-@version        0.1
+@version        0.2
 @description    ChatGPT wider for poor people
 @author         @maulusckf
 @homepageURL    https://github.com/maulusck/stylus-themes
@@ -14,6 +14,9 @@
     body {
         background-color: #111 !important;
         border: 0.1px solid #666 !important;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
 
     pre {
@@ -30,26 +33,29 @@
     .user-message-bubble-color {
         padding: 5px 15px;
         border: 0.1px solid #ffffff !important;
-        max-width: 85vw !important;
+        max-width: 80vw !important;
         border-radius: 2px;
         margin-left: auto;
         margin-right: 0;
+        word-wrap: break-word;
     }
 
     .user-message-bubble-color pre {
-        padding: 10px 15px !important;
-        margin: 15px 5px !important;
+        padding: 5px 10px !important;
+        margin: 10px 0 !important;
     }
 
     [class*="chatContainer"] {
-        max-width: 90vw !important;
-        width: 90vw !important;
+        width: 95vw !important;
+        max-width: 95vw !important;
+        height: 100vh !important;
         margin-left: auto !important;
         margin-right: auto !important;
+        overflow: auto;
     }
 
     [class*="message"] {
-        max-width: 85vw !important;
+        max-width: 90vw !important;
     }
 
     #page-header,
@@ -66,6 +72,12 @@
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        max-width: none !important;
+        max-width: 100% !important;
+    }
+
+    html,
+    body {
+        height: 100%;
+        overflow: hidden;
     }
 }
