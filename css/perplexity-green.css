@@ -10,7 +10,8 @@
 @license        WTFPL
 @preprocessor   default
 ==/UserStyle== */
-
+@-moz-document domain("perplexity.ai") {
+  
 /* Green text everywhere including output */
 span, code, pre *, p, div[class*="prose"] * { color: #00ff00 !important; }
 
