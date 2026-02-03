@@ -1,0 +1,18 @@
+/* Green text everywhere including output */
+span, code, pre *, p, div[class*="prose"] * { color: #00ff00 !important; }
+
+/* Lighter purple comments */
+span[style*="font-style: italic"],
+span[class*="token"][style*="150, 152, 150"] { color: #c080ff !important; }
+
+/* Cyan keywords */
+[class*="atrule"], [class*="property"], [class*="punctuation"] { color: #00ffff !important; }
+
+/* Wider external limit */
+[class*="md:max-w-90vw"], main, [class*="prose"] { max-width: none !important; }
+
+/* Outside darker */
+[class*="bg-subtler"], [class*="bg-base"] { background-color: #111 !important; }
+
+/* Inside lighter */
+pre, code { background-color: #222 !important; }
