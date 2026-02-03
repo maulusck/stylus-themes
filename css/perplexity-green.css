@@ -1,3 +1,16 @@
+/* ==UserStyle==
+@name           perplexity green
+@namespace      https://github.com/maulusck/stylus-themes
+@version        0.1
+@description    Perplexity but green
+@author         @maulusckf
+@homepageURL    https://github.com/maulusck/stylus-themes
+@supportURL     https://github.com/maulusck/stylus-themes/issues
+@updateURL      https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/perplexity-green.css
+@license        WTFPL
+@preprocessor   default
+==/UserStyle== */
+
 /* Green text everywhere including output */
 span, code, pre *, p, div[class*="prose"] * { color: #00ff00 !important; }
 
