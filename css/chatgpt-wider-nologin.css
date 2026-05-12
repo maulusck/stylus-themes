@@ -1,25 +1,26 @@
 /* ==UserStyle==
 @name           chatgpt wider nologin
 @namespace      https://github.com/maulusck/stylus-themes
-@version        0.4
+@version        0.5
 @description    ChatGPT wider for poor people
 @author         @maulusckf
 @homepageURL    https://github.com/maulusck/stylus-themes
 @supportURL     https://github.com/maulusck/stylus-themes/issues
-@updateURL      https://raw.githubusercontent.com/maulusck/stylus-themes/master/css/chatgpt-wider-nologin.css
 @license        WTFPL
 @preprocessor   default
 ==/UserStyle== */
 @-moz-document domain("chatgpt.com") {
-
     :root {
-        --bg: #0b0c0f;
-        --fg: #e6e6e6;
-        --accent: #ffb000;
-        --green: rgba(0, 255, 160, 0.12);
+        --bg: #050705;
+        --amber: #e6a000;
+        --amber-dim: rgba(230, 160, 0, 0.05);
+        --amber-border: rgba(230, 160, 0, 0.28);
+        --green: #00e68a;
+        --green-dim: rgba(0, 230, 138, 0.06);
+        --green-border: rgba(0, 230, 138, 0.16);
+        --fg: #fff;
         --mono: "Andale Mono", monospace;
     }
-
 
     html,
     body {
@@ -29,7 +30,30 @@
         background: var(--bg);
         color: var(--fg);
         font-family: var(--mono);
-        border: 1px solid var(--green);
+        border: 1px solid var(--green-border);
+        font-size: 15px;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background: repeating-linear-gradient(to bottom, rgba(0, 230, 138, 0.04), rgba(0, 230, 138, 0.04) 1px, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0) 4px);
+        opacity: 0.18;
+        z-index: 9999;
+        mix-blend-mode: overlay;
+    }
+
+    body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 100%), repeating-linear-gradient(to bottom, rgba(0, 255, 140, 0.03), rgba(0, 255, 140, 0.03) 1px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 5px);
+        opacity: 0.25;
+        z-index: 10000;
+        mix-blend-mode: multiply;
     }
 
     [class*="chatContainer"] {
@@ -38,7 +62,7 @@
         height: 100vh !important;
         margin: 0 auto !important;
         overflow: auto;
-        border: 1px solid var(--green) !important;
+        border: 1px solid var(--green-border) !important;
     }
 
     [class*="thread-content-max-width"] {
@@ -57,32 +81,36 @@
         font-family: var(--mono);
         font-size: 14px;
         color: var(--fg);
-        text-shadow: none !important;
+        text-shadow: 0 0 2px rgba(0, 230, 138, 0.10);
     }
 
     .user-message-bubble-color {
         max-width: 80vw !important;
         margin-left: auto;
         padding: 6px 14px;
-        background: rgba(255, 176, 0, 0.04);
-        color: #f0f0f0;
-        border: 1px solid var(--accent) !important;
-        border-radius: 3px;
-        box-shadow: none;
+        background: rgba(230, 160, 0, 0.04);
+        color: var(--fg);
+        border: 1px solid var(--amber) !important;
+        border-radius: 2px;
+        box-shadow: 0 0 6px rgba(230, 160, 0, 0.06);
     }
 
     .user-message-bubble-color pre {
-        padding: 6px 10px !important;
+        padding: 6px 18px !important;
         margin: 8px 0 !important;
+        background: rgba(20, 10, 0, 0.55) !important;
+        border: 1px solid var(--amber-border) !important;
+        color: var(--fg);
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
     }
 
     pre {
-        margin: 10px 0 !important;
-        padding: 6px !important;
-        background: #0f1412;
+        margin: 10px 10px !important;
+        padding: 6px 18px !important;
+        background: rgba(0, 0, 0, 0.55);
         color: var(--fg);
-        border: 1px solid #26322c !important;
-        border-radius: 2px;
+        border: 1px solid var(--green-border) !important;
+        text-shadow: 0 0 2px rgba(0, 230, 138, 0.15);
     }
 
     #page-header,
@@ -95,32 +123,48 @@
         visibility: hidden;
     }
 
+    aside,
+    nav[aria-label="Chat history"],
+    [data-testid*="sidebar"] {
+        width: 280px !important;
+        min-width: 260px !important;
+        max-width: 320px !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        padding: 6px 4px !important;
+        scrollbar-width: thin;
+    }
+
     [data-sidebar-item="true"] {
-        margin: 4px 6px !important;
-        padding: 7px 10px !important;
-        background: rgba(0, 255, 160, 0.01) !important;
-        border: 1px solid rgba(0, 255, 160, 0.1) !important;
-        border-radius: 6px !important;
+        margin: 2px 6px !important;
+        padding: 6px 8px !important;
+        background: rgba(0, 230, 138, 0.02) !important;
+        border: 1px solid rgba(0, 230, 138, 0.10) !important;
+        border-radius: 4px !important;
         color: var(--fg) !important;
         font-family: var(--mono) !important;
         transition: background 0.12s, border-color 0.12s;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     [data-sidebar-item="true"]:hover {
-        background: rgba(0, 255, 160, 0.03) !important;
-        border-color: rgba(0, 255, 160, 0.18) !important;
+        background: rgba(0, 230, 138, 0.06) !important;
+        border-color: var(--green-border) !important;
     }
 
-    [data-sidebar-item="true"] *,
-    [data-sidebar-item="true"] svg,
-    [data-sidebar-item="true"] span,
-    [data-sidebar-item="true"] div,
-    [data-sidebar-item="true"] kbd {
+    [data-sidebar-item="true"] * {
         color: var(--fg) !important;
         font-family: inherit !important;
     }
 
     [data-sidebar-item="true"] kbd {
-        opacity: 0.55;
+        opacity: 0.5;
+        font-size: 11px;
+    }
+
+    button[aria-label="Claim offer"] {
+        display: none !important;
     }
 }
