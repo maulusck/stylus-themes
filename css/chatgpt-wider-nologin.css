@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           chatgpt wider nologin
 @namespace      https://github.com/maulusck/stylus-themes
-@version        0.3
+@version        0.4
 @description    ChatGPT wider for poor people
 @author         @maulusckf
 @homepageURL    https://github.com/maulusck/stylus-themes
@@ -11,70 +11,78 @@
 @preprocessor   default
 ==/UserStyle== */
 @-moz-document domain("chatgpt.com") {
+
+    :root {
+        --bg: #0b0c0f;
+        --fg: #e6e6e6;
+        --accent: #ffb000;
+        --green: rgba(0, 255, 160, 0.12);
+        --mono: "Andale Mono", monospace;
+    }
+
+
+    html,
     body {
-        background-color: #0b0c0f !important;
-        border: 0.1px solid rgba(0, 255, 160, 0.28) !important;
+        height: 100%;
         margin: 0;
-        padding: 0;
         overflow: hidden;
-        font-family: "Courier New", monospace;
-        color: #bfffd6;
-        box-shadow: inset 0 0 10px rgba(0, 255, 160, 0.08);
-    }
-
-    pre {
-        border-radius: 2px;
-        border: 0.1px solid #2f3a33 !important;
-        padding: 2px !important;
-        color: #caffdd;
-        text-shadow: 0 0 2px rgba(0, 255, 160, 0.15);
-        background: #0f1412;
-    }
-
-    .user-message-bubble-color,
-    .markdown {
-        font-size: 14px;
-        font-family: "Courier New", monospace;
-    }
-
-    .user-message-bubble-color {
-        padding: 5px 15px;
-        border: 0.1px solid #ffb000 !important;
-        max-width: 80vw !important;
-        border-radius: 2px;
-        margin-left: auto;
-        margin-right: 0;
-        word-wrap: break-word;
-        background: rgba(255, 176, 0, 0.06);
-        color: #ffcc66;
-        box-shadow: none;
-    }
-
-    .user-message-bubble-color pre {
-        padding: 5px 10px !important;
-        margin: 10px 0 !important;
-        background: #0f1412;
-        border: 0.1px solid #26322c !important;
-    }
-
-    .markdown {
-        color: #caffdd;
-        text-shadow: 0 0 1px rgba(0, 255, 160, 0.18);
+        background: var(--bg);
+        color: var(--fg);
+        font-family: var(--mono);
+        border: 1px solid var(--green);
     }
 
     [class*="chatContainer"] {
         width: 95vw !important;
         max-width: 95vw !important;
         height: 100vh !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        margin: 0 auto !important;
         overflow: auto;
-        box-shadow: 0 0 14px rgba(0, 255, 160, 0.10);
-        border: 0.1px solid rgba(0, 255, 160, 0.22) !important;
+        border: 1px solid var(--green) !important;
+    }
+
+    [class*="thread-content-max-width"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     [class*="message"] {
         max-width: 90vw !important;
+    }
+
+    .markdown,
+    .user-message-bubble-color {
+        font-family: var(--mono);
+        font-size: 14px;
+        color: var(--fg);
+        text-shadow: none !important;
+    }
+
+    .user-message-bubble-color {
+        max-width: 80vw !important;
+        margin-left: auto;
+        padding: 6px 14px;
+        background: rgba(255, 176, 0, 0.04);
+        color: #f0f0f0;
+        border: 1px solid var(--accent) !important;
+        border-radius: 3px;
+        box-shadow: none;
+    }
+
+    .user-message-bubble-color pre {
+        padding: 6px 10px !important;
+        margin: 8px 0 !important;
+    }
+
+    pre {
+        margin: 10px 0 !important;
+        padding: 6px !important;
+        background: #0f1412;
+        color: var(--fg);
+        border: 1px solid #26322c !important;
+        border-radius: 2px;
     }
 
     #page-header,
@@ -87,16 +95,32 @@
         visibility: hidden;
     }
 
-    [class*="thread-content-max-width"] {
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 100% !important;
-        max-width: 100% !important;
+    [data-sidebar-item="true"] {
+        margin: 4px 6px !important;
+        padding: 7px 10px !important;
+        background: rgba(0, 255, 160, 0.01) !important;
+        border: 1px solid rgba(0, 255, 160, 0.1) !important;
+        border-radius: 6px !important;
+        color: var(--fg) !important;
+        font-family: var(--mono) !important;
+        transition: background 0.12s, border-color 0.12s;
     }
 
-    html,
-    body {
-        height: 100%;
-        overflow: hidden;
+    [data-sidebar-item="true"]:hover {
+        background: rgba(0, 255, 160, 0.03) !important;
+        border-color: rgba(0, 255, 160, 0.18) !important;
+    }
+
+    [data-sidebar-item="true"] *,
+    [data-sidebar-item="true"] svg,
+    [data-sidebar-item="true"] span,
+    [data-sidebar-item="true"] div,
+    [data-sidebar-item="true"] kbd {
+        color: var(--fg) !important;
+        font-family: inherit !important;
+    }
+
+    [data-sidebar-item="true"] kbd {
+        opacity: 0.55;
     }
 }
